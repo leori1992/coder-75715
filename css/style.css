@@ -2,7 +2,7 @@
 * {
     margin-top: 0;
 }
-   body {
+   #indexbody{
        margin: 0;
        padding: 0;
        background-color: #afb495;
@@ -13,7 +13,8 @@
    #index__header{
 
        width: 100%;
-       height: 100px;
+       height: 180px;
+       background-color: #000;
       
    }
    .logoRejal{
@@ -28,10 +29,12 @@
 #index__main{
     height: 100vh;
     background-color: #afb495;
+    padding-top: 100px;
 }
 
 
 ul{
+    padding-top: 20px;
     list-style-type: none;
     text-decoration: none;
     display: flex;   
@@ -41,6 +44,7 @@ ul{
     
 }
    li{
+
 
          display: inline-block;
          padding: 20px;
@@ -77,27 +81,26 @@ a{
  #productosMain{
     height: 100vh;
     
+    
+    
  }
-                                   
+
+ .carousel-item{
+    border: #000 solid 1px;
+ }
+            
+ 
 
      
      .productosH1{
          text-align: center;
          font-size: 50px;
          color: #000;
-         margin-top: 200px;
+         margin-top: 280px;
      }
      
      
-     #productosFooter {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: end; 
-        align-items: center; 
-        justify-content: end;
-    
-        padding: 20px; 
-    }
+
     
     .iconosRedes {
         display: flex;
@@ -111,6 +114,7 @@ a{
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(4, 1fr);
+grid-template-rows: 1, 0.5;
 grid-column-gap: 35px;
 grid-row-gap: 35px;    }
 
@@ -123,7 +127,13 @@ grid-row-gap: 35px;    }
     margin: 1fr;
     
 }
-
+#productosBody{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 #productosHeader{
 
@@ -133,7 +143,7 @@ grid-row-gap: 35px;    }
 }
 .logoRejal{
     width: 100%;
-    height: 220px;
+    height: 280px;
     
     display: flex;
     justify-content: center;
@@ -142,7 +152,7 @@ grid-row-gap: 35px;    }
 
 #productosMain{
  height: 100vh;
- background-color: #afb495;
+
 }
 
 
@@ -168,24 +178,72 @@ li{
 
 
 
+                                                                          /*..........................SERVICIOS  ..............................*/
+
+#serviciosHeader{
+    width: 100%;
+    height: 100px;
+   
+}
+
+#serviciosmain{
+    height: 100vh;
+}
+
+.serviciosh1{
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+    
+    text-align: center;
+}
 
 
 
+                                                                              /*............................. CONTACTO ..........................*/
 
 
+#contactomain{
+    height: 100vh;
+}
 
+.contactodiv{
 
+    text-align: center;
+   
 
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    
+  
 
+    
+}
 
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
+    
+    border: #000 solid 1px;
+    padding: 20px;
+    background-color: #fff;
+    width: 50%;
+}
 
-
-
-
-
-
-
+.comentarios{
+    display: flex;
+height: 200px;
+width: 500px;
+}
 
 
 
