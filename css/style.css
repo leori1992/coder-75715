@@ -1,12 +1,25 @@
 
 * {
     margin-top: 0;
+
 }
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+
    #indexbody{
        margin: 0;
        padding: 0;
        background-color: #afb495;
 
+    
    }
 
 
@@ -43,7 +56,7 @@ ul{
     text-decoration: none;
     
 }
-   li{
+   li a{
 
 
          display: inline-block;
@@ -102,11 +115,7 @@ a{
      
 
     
-    .iconosRedes {
-        display: flex;
-        justify-content: flex-end;
-        gap: 10px; 
-    }
+
      
      
 .grid-container{
@@ -117,6 +126,32 @@ grid-template-rows: repeat(4, 1fr);
 grid-template-rows: 1, 0.5;
 grid-column-gap: 35px;
 grid-row-gap: 35px;    }
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
@@ -213,6 +248,13 @@ li{
    
 
 }
+
+.contactoh1{
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+    margin-top: 150px;
+}
 .formulario{
     display: flex;
     justify-content: center;
@@ -249,11 +291,21 @@ width: 500px;
 
 
 
+                                                                            /* ......................................NOSOTROS............................... */
 
 
 
 
+#nosotrosMain{
+    height: 100vh;
+}
 
+
+
+   #nosotrosFooter{
+    display: flex  ;
+    justify-content: flex-end;
+   }
 
 
 
