@@ -1,0 +1,41 @@
+/*............................. CONTACTO ..........................*/
+#contactomain {
+  height: 100vh;
+}
+
+.contactodiv {
+  text-align: center;
+}
+
+.contactoh1 {
+  text-align: center;
+  font-size: 50px;
+  color: #000;
+  margin-top: 150px;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: #000 solid 1px;
+  padding: 20px;
+  background-color: #fff;
+  width: 50%;
+}
+
+.comentarios {
+  display: flex;
+  height: 200px;
+  width: 500px;
+}

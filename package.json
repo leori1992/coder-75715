@@ -1,0 +1,20 @@
+{
+  "name": "coder-tp-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leori1992/coder-75715.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leori1992/coder-75715/issues"
+  },
+  "homepage": "https://github.com/leori1992/coder-75715#readme",
+  "description": ""
+}
