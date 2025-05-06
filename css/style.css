@@ -7,6 +7,17 @@
   text-align: center;
 }
 
+.nav-link{
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar-collapse{
+  background-color: #4d4b4b;
+ position: relative;
+  z-index: 1000 !important;
+  /* opacity: 68%; */
+}
+
 .contactoh1 {
   text-align: center;
   font-size: 50px;
@@ -40,6 +51,26 @@
   width: 500px;
 }
 
+#contactoFooter{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            /* index */
 * {
   margin-top: 0;
 }
@@ -142,6 +173,7 @@ a {
   text-decoration: none;
 }
 
+
 /*..........................SERVICIOS  ..............................*/
 #serviciosHeader {
   width: 100%;
@@ -158,16 +190,27 @@ a {
   color: #000;
   text-align: center;
 }
-
+/* #serviciosFooter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+} */
 /* ......................................NOSOTROS............................... */
 #nosotrosMain {
   height: 100vh;
+
+  min-height: calc(100vh - 180px);
 }
 
 #nosotrosFooter {
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
+  align-items: end;
+  padding-top: 50px;
+  
 }
+
+
 
 /* ------------------------------------------------------------Productos------------------------------------------------------------- */
 #productosMain {
@@ -205,7 +248,11 @@ a {
   width: 100%;
   height: auto;
   object-fit: cover;
+ 
 }
+
+
+
 
 @media (max-width: 768px) {
   .grid-container {
