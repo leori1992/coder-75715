@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*............................. CONTACTO ..........................*/
 #contactomain {
   height: 100vh;
@@ -5,17 +6,6 @@
 
 .contactodiv {
   text-align: center;
-}
-
-.nav-link{
-  background-color: rgb(255, 255, 255);
-}
-
-.navbar-collapse{
-  background-color: #4d4b4b;
- position: relative;
-  z-index: 1000 !important;
-  /* opacity: 68%; */
 }
 
 .contactoh1 {
@@ -51,26 +41,6 @@
   width: 500px;
 }
 
-#contactoFooter{
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  padding-top: 50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                            /* index */
 * {
   margin-top: 0;
 }
@@ -98,6 +68,10 @@
   z-index: 100;
 }
 
+.nav-link {
+  background-color: #8a8888;
+}
+
 /* .box {-
     width: 100px;
     height: 100px;
@@ -112,18 +86,20 @@
 #indexbody {
   margin: 0;
   padding: 0;
-  background-color: #afb495;
+  background-image: linear-gradient(90deg, rgb(7, 7, 10) 26%, rgb(36, 36, 32) 58%, rgb(166, 166, 76) 96%);
+  background-size: cover; /* Asegura que el fondo cubra todo el área */
+  background-position: center; /* Centra el fondo */
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
 }
 
 #index__header {
   width: 100%;
   height: 180px;
-  background-color: #000;
 }
 
 .logoRejal {
   width: 100%;
-  height: 150px;
+  height: px;
   background-color: #000;
   display: flex;
   justify-content: center;
@@ -132,8 +108,23 @@
 
 #index__main {
   height: 100vh;
-  background-color: #afb495;
   padding-top: 100px;
+  overflow: hidden;
+}
+
+.indexh4 {
+  text-align: center;
+  font-size: 30px;
+  color: #8a8888;
+  margin-top: 50px;
+}
+
+.nav-link {
+  background-color: #8a8888;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 ul {
@@ -143,14 +134,12 @@ ul {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  text-decoration: none;
 }
 
 li a {
   display: inline-block;
   padding: 20px;
   font-size: 20px;
-  color: #000;
 }
 
 .indexH1 {
@@ -165,14 +154,24 @@ li a {
 
 .iconosRedes {
   display: flex;
-  justify-content: flex-end;
-  width: 15%;
+  justify-content: flex-start;
+  gap: 10px;
+  width: auto;
 }
 
+.iconosRedes img {
+  width: 30px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .iconosRedes {
+    justify-content: center;
+  }
+}
 a {
   text-decoration: none;
 }
-
 
 /*..........................SERVICIOS  ..............................*/
 #serviciosHeader {
@@ -190,29 +189,59 @@ a {
   color: #000;
   text-align: center;
 }
-/* #serviciosFooter {
-  display: flex;
-  justify-content: flex-end;
-  align-items: end;
-} */
+
 /* ......................................NOSOTROS............................... */
+#nosotrosbody {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(90deg, rgb(7, 7, 10) 26%, rgb(36, 36, 32) 58%, rgb(166, 166, 76) 96%);
+  background-size: cover; /* Asegura que el fondo cubra todo el área */
+  background-position: center; /* Centra el fondo */
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
+}
+
 #nosotrosMain {
   height: 100vh;
-
-  min-height: calc(100vh - 180px);
 }
 
 #nosotrosFooter {
   display: flex;
-  justify-content: end;
-  align-items: end;
-  padding-top: 50px;
-  
+  justify-content: flex-end;
 }
 
+.iconosRedes {
+  display: flex;
+  justify-content: flex-start; /* Cambia a la izquierda */
+  gap: 10px;
+  width: 15%;
+}
 
+.nosotrosh1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nosotrosh4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
 
 /* ------------------------------------------------------------Productos------------------------------------------------------------- */
+#productosBody {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(90deg, rgb(7, 7, 10) 26%, rgb(36, 36, 32) 58%, rgb(166, 166, 76) 96%);
+  background-size: cover; /* Asegura que el fondo cubra todo el área */
+  background-position: center; /* Centra el fondo */
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
+}
+
 #productosMain {
   height: 100vh;
 }
@@ -238,21 +267,11 @@ a {
   grid-row-gap: 35px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
 .grid-item img {
   width: 100%;
   height: auto;
   object-fit: cover;
- 
 }
-
-
-
 
 @media (max-width: 768px) {
   .grid-container {
@@ -272,7 +291,6 @@ a {
 }
 
 #productosBody {
-  background-image: url(../img/fondo.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -282,6 +300,17 @@ a {
 #productosHeader {
   width: 100%;
   height: 100px;
+  background-image: linear-gradient(90deg, rgb(7, 7, 10) 26%, rgb(36, 36, 32) 58%, rgb(166, 166, 76) 96%);
+  background-size: cover; /* Asegura que el fondo cubra todo el área */
+  background-position: center; /* Centra el fondo */
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
+}
+
+.menu {
+  background-image: linear-gradient(90deg, rgb(7, 7, 10) 26%, rgb(36, 36, 32) 58%, rgb(166, 166, 76) 96%);
+  background-size: cover; /* Asegura que el fondo cubra todo el área */
+  background-position: center; /* Centra el fondo */
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
 }
 
 .logoRejal {
@@ -294,19 +323,23 @@ a {
 
 #productosMain {
   height: 100vh;
+  background-image: linear-gradient(90deg, rgb(7, 7, 10) 26%, rgb(36, 36, 32) 58%, rgb(166, 166, 76) 96%);
+  background-size: cover; /* Asegura que el fondo cubra todo el área */
+  background-position: center; /* Centra el fondo */
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
 }
 
 ul {
   list-style-type: none;
-  text-decoration: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-around;
   text-align: center;
-  text-decoration: none;
 }
 
 li {
-  display: inline-block;
+  margin: 0;
   padding: 20px;
   font-size: 20px;
   color: #000;

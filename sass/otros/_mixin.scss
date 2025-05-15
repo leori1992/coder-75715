@@ -1,0 +1,6 @@
+@mixin fondo {
+    background-image: linear-gradient(90deg, rgba(7, 7, 10, 1) 26%, rgba(36, 36, 32, 1) 58%, rgba(166, 166, 76, 1) 96%);
+    background-size: cover; /* Asegura que el fondo cubra todo el área */
+    background-position: center; /* Centra el fondo */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+  }
