@@ -1,16 +1,87 @@
- /*..........................SERVICIOS  ..............................*/
- #serviciosHeader {
+@use "../otros/mixin";
+/*..........................SERVICIOS  ..............................*/
+#serviciosHeader {
   width: 100%;
   height: 100px;
 }
 
 #serviciosmain {
-  height: 100vh;
+  min-height: 100vh; 
+  box-sizing: border-box; 
+  @include mixin.fondo;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
 }
 
 .serviciosh1 {
   text-align: center;
   font-size: 50px;
   color: #000;
-  text-align: center;
+  margin: 20px 0;
 }
+
+.serviciosh4 {
+  text-align: center;
+  font-size: 30px;
+  color: #777373;
+  margin: 20px 0;
+}
+
+#serviciosFooter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  @include mixin.fondo;
+}
+
+
+@media (max-width: 768px) {
+  #serviciosmain {
+    min-height: 100vh; 
+    box-sizing: border-box;
+    @include mixin.fondo;
+    padding: 20px; 
+  }
+
+  .serviciosh1 {
+    font-size: 30px; 
+    margin: 10px 0; 
+  }
+
+  .serviciosh4 {
+    font-size: 20px;
+    margin: 10px 0; 
+  }
+
+  #serviciosFooter {
+    flex-direction: column; 
+    align-items: center;
+  }
+}
+
+
+@media (min-width: 768px) {
+  #serviciosmain {
+    min-height: 100vh; 
+    box-sizing: border-box;
+    @include mixin.fondo; 
+    padding: 50px; 
+  }
+
+  .serviciosh1 {
+    font-size: 40px; 
+    margin: 20px 0; 
+  }
+
+  .serviciosh4 {
+    font-size: 25px; 
+    margin: 20px 0;
+  }
+
+  #serviciosFooter {
+    flex-direction: row; 
+    justify-content: space-between; 
+  }
+}
+ 

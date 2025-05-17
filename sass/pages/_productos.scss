@@ -9,7 +9,15 @@
   @include mixin.fondo;
 }
 
+.navbar-nav{
+  z-index: 10;
+ 
+}
 
+.menu{
+  position: absolute;
+  z-index: 10;
+}
 
 #productosMain {
     height: 100vh;
@@ -78,9 +86,7 @@
    
   }
   
-  .menu{
-    @include mixin.fondo;
-  }
+
 
   .logoRejal {
     width: 100%;
@@ -109,4 +115,5 @@
     padding: 20px; 
     font-size: 20px;
     color: #000;
+    list-style-type: none;
   }

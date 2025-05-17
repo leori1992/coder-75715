@@ -1,6 +1,6 @@
+@use "../otros/mixin";
 /* ......................................NOSOTROS............................... */
 
-@use "../otros/mixin";
 #nosotrosbody {
   margin: 0;
   padding: 0;
@@ -8,6 +8,7 @@
 }
 
 #nosotrosMain {
+  
   height: 100vh;
 }
 
@@ -18,7 +19,7 @@
 
 .iconosRedes {
   display: flex;
-  justify-content: flex-start; /* Cambia a la izquierda */
+  justify-content: flex-start;
   gap: 10px;
   width: 15%;
 }
@@ -27,7 +28,7 @@
   font-weight: 700;
   color: #fff;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 110px;
 }
 .nosotrosh4{
   font-size: 1.5rem;
