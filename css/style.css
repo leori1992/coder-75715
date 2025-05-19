@@ -268,6 +268,9 @@ li a {
   .indexmain {
     padding-top: 50px;
   }
+  .indexmain #index__main {
+    padding-top: 50px;
+  }
 }
 /*..........................SERVICIOS  ..............................*/
 #serviciosHeader {
