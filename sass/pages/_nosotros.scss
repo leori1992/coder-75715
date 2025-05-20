@@ -1,39 +1,78 @@
-@use "../otros/mixin";
-/* ......................................NOSOTROS............................... */
+ @use "../otros/mixin";
+ /* ......................................NOSOTROS............................... */
 
-#nosotrosbody {
-  margin: 0;
-  padding: 0;
-  @include mixin.fondo;
-}
+ #nosotrosbody {
+   margin: 0;
+   padding: 0;
+   @include mixin.fondo;
+   @media (max-width: 1000px) {
+     .navbar-toggler-icon {
+       background-image: url("data:image/svg+xml,%3Csvg xmlns='http:www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+     }
+   }
+   overflow-y: auto; 
+ }
 
-#nosotrosMain {
+ #nosotrosMain {
+   overflow: hidden  ;
+   height: 100vh;
+ }
+
+ #nosotrosFooter {
+   display: flex;
+   justify-content: flex-end;
+   max-width: 100%;
+ }
+
+ .iconosRedes {
   
-  height: 100vh;
-}
+   gap: 10px;
+   width: 15%;
+ }
+ .nosotrosh1{
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: #fff;
+   text-align: center;
+   margin-top: 110px;
+ }
+ .nosotrosh4{
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: #fff;
+   text-align: center;
+   margin-top: 20px;
+ }
 
-#nosotrosFooter {
+
+.nosotrosdiviconos{
   display: flex;
   justify-content: flex-end;
+  align-items: start;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-.iconosRedes {
-  display: flex;
-  justify-content: flex-start;
-  gap: 10px;
-  width: 15%;
-}
-.nosotrosh1{
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-  margin-top: 110px;
-}
-.nosotrosh4{
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-  margin-top: 20px;
+@media (max-width: 480px) {
+
+  #nosotrosMain {
+    overflow: hidden  ;
+    height: auto;
+    
+  }
+
+  .nosotrosh1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: 110px;
+  }
+  .nosotrosdiviconos{
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    gap: 10px;
+    margin-top: 20px;
+  }
 }
