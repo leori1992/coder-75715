@@ -12,12 +12,12 @@
 </head>
 <body id="productosBody">
 
-    <a href="https://wa.me/12345678900?text=Hola" class="float-wa" target="_blank">
+    <a href="https://wa.me/+541165411918?text=Hola" class="float-wa" target="_blank">
         <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
     </a>
     <header id="productosHeader">
 
-        <img class="logoRejal" src="../imagenes/logoRejal.jpg" alt="">
+      <div class="divlogorejal" ><img class="logoRejal" src="../imagenes/logoRejal.jpg" alt="Logo de R-ejal calzados"></div>
         
    <section class="menu">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -45,9 +45,32 @@
     </header>
  
     <main id="productosMain">
+
+      
     
 
-     <h1 class="productosH1">Productos</h1>
+     <h1 class="productosH1">Productos</h1> 
+
+<!-- Enlace para abrir el modal -->
+<a href="#" data-bs-toggle="modal" data-bs-target="#tablaTallesModal" class="btn btn-primary">TABLA DE TALLES</a>
+
+<!-- Modal de Bootstrap -->
+<div class="modal fade" id="tablaTallesModal" tabindex="-1" aria-labelledby="tablaTallesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xxl"> <!-- Cambiado a modal-xxl para hacerlo más grande -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tablaTallesLabel">Tabla de Talles</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="../imagenes/tabla de talles 954.jpg" alt="Tabla de Talles" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
 <div class="grid-container"      > 
                                    <!--primeras imagenes art 850  -->
     <div            id="carousel850" class="carousel slide"  data-bs-interval="false">
@@ -397,7 +420,7 @@
                                   </div>
 
 <div>
-  <img width="224px" height="66px" src="../imagenes/iconos.jpg" alt="">
+  
 
 </div>
 
